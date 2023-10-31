@@ -8,31 +8,27 @@ public class BasicArm {
     private boolean isGrabbing;
 
     
-    BasicArm(String placeholder){
-
+    public BasicArm(){
+        this.isGrabbing=false;
     }
 
-    protected boolean isGrabbing(){
+    public boolean isGrabbing(){
         return isGrabbing;
     }
 
-    protected void pickUp(){
-        if(!isGrabbing()){
-            isGrabbing=true;
-        }
+    public void pickUp(){
+        isGrabbing=true;
     }
 
-    protected void dropDown(){
-        if(isGrabbing()){
-            isGrabbing=false;
-        }
+    public void dropDown(){
+        isGrabbing=false;
     }
 
-    protected double getConsumptionForPickUp(){
+    public static double getConsumptionForPickUp(){
         return ENERGY_TO_PICK_UP;
     }
 
-    protected double getConsumptionForDropDown(){
+    public static double getConsumptionForDropDown(){
         return ENERGY_TO_DROP_DOWN;
     }
 }
