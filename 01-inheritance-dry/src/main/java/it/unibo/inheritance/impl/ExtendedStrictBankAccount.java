@@ -21,7 +21,7 @@ public class ExtendedStrictBankAccount extends SimpleBankAccount{
 
     @Override
     public void withdrawFromATM(final int id, final double amount) {
-        if (isWithdrawAllowed(amount + SimpleBankAccount.ATM_TRANSACTION_FEE)) {
+        if (isWithdrawAllowed(amount + ExtendedStrictBankAccount.ATM_TRANSACTION_FEE)) {
             super.withdrawFromATM(id, amount);
         }
     }
