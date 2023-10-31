@@ -24,5 +24,5 @@ public interface RobotWithArms extends Robot{
      * 
      * @return the number of items carried
      */
-    int getItemsCarried();
+    int getCarriedItemsCount();
 }
